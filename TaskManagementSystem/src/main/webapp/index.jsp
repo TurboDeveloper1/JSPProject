@@ -9,26 +9,12 @@
 </head>
 <body>
 	<h1>Welcome to the Task Management System</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Bikes</a></li>
-				<li><a href="#">Rentals</a></li>
-				<li><a href="#">About</a></li>
-				Username: <input type="text" name="user">
-				Password: <input type="password" name="pass">
-				<% int i=10; if(i<1) {%>
-				<li><a href="/TaskManagementApplication/dashboard.jsp">Contact</a></li>
-				<%} else { %>
-				<li><a href="/TaskManagementApplication/dashboard.jsp">Information</a></li>
-				<% } %>
-
-				<% LoginController.createTable(); %>
-				
-				
-				
-			</ul>
-		</nav>
+	<h2>Login Form</h2>
+		<form action="login" method="post">
+			<input type="text" id="cusid">
+			<input type="password" id="password">
+			<input type="submit" value="Login">
+		</form>
 	
 </body>
 </html>

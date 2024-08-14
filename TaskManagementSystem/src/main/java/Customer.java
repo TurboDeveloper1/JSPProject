@@ -1,14 +1,14 @@
 
 public class Customer {
 
-	private int customerId;
+	private String customerId;
 	private String customerName;
 	private String customerPassword;
 	
-	public int getCustomerId() {
+	public String getCustomerId() {
 		return customerId;
 	}
-	public void setCustomerId(int customerId) {
+	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
 	}
 	public String getCustomerName() {
@@ -23,7 +23,7 @@ public class Customer {
 	public void setCustomerPassword(String customerPassword) {
 		this.customerPassword = customerPassword;
 	}
-	public Customer(int customerId, String customerName, String customerPassword) {
+	public Customer(String customerId, String customerName, String customerPassword) {
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.customerPassword = customerPassword;
